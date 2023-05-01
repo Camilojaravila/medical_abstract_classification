@@ -26,10 +26,6 @@ def upload():
         "name":"Multinomial Bayes",
         "model": None
         },
-    'grid_search_pre':{
-        "name":"Ensemblers (Precision)",
-        "model": None
-        },
     'grid_search_knn':{
         "name":"K-Nearest Neighbors",
         "model": None
