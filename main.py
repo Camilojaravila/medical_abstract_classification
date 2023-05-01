@@ -1,6 +1,6 @@
 import streamlit as st
 from joblib import load
-from preproccess import TextPreprocessing
+from preproccess import TextPreprocessing, download_basic
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
@@ -21,6 +21,7 @@ classes = {
 # Al tener que realizar la conexión una vez, utilizamos el decorador para no hacer varios llamados a la vez
 @st.experimental_singleton
 def upload():
+    download_basic()
     models = {
     'grid_search_NB':{
         "name":"Multinomial Bayes",
