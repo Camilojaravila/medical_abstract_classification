@@ -10,10 +10,11 @@ st.set_page_config(
 )
 
 @st.experimental_singleton
-def upload():
+def download_basic_nltk():
     download_basic()
 
-
+download_basic_nltk()
+    
 from preproccess import TextPreprocessing
 
 # Clases proporcionadas por el negocio
