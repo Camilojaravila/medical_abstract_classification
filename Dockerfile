@@ -22,7 +22,7 @@ RUN python -m nltk.downloader omw-1.4
 
 # Service must listen to $PORT environment variable.
 # This default value facilitates local development.
-ENV PORT 9030
+ENV PORT 9020
 ENV TZ="America/Bogota"
 RUN date
 
